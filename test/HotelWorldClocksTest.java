@@ -40,4 +40,11 @@ public class HotelWorldClocksTest {
         assertEquals(20, newYorkClock.getTime());
         assertEquals(1, londonClock.getTime());
     }
+
+    @Test
+    public void the_time_of_phone_should_be_set_correctly_after_its_setTime_method_is_invoked(){
+        PhoneClock phoneClock = new PhoneClock(8);
+        phoneClock.setTime(9);
+        assertEquals(9, phoneClock.getTime());
+    }
 }
