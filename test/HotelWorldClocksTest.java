@@ -12,4 +12,13 @@ public class HotelWorldClocksTest {
         phoneClock.setTime(9);
         assertEquals(1, londonClock.getTime());
     }
+
+    @Test
+    public void the_time_of_clock_NewYork_should_be_20_after_the_phone_clock_is_set_to_9_Beijing_time(){
+        CityClock newYorkClock = new CityClock(-5);
+        PhoneClock phoneClock = new PhoneClock(8);
+        phoneClock.setCityClock(newYorkClock);
+        phoneClock.setTime(9);
+        assertEquals(20, newYorkClock.getTime());
+    }
 }
