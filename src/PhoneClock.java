@@ -1,6 +1,5 @@
-public class PhoneClock {
+public class PhoneClock extends Clock {
     private CityClock cityClock;
-    private int utcOffset;
     private HotelWorldClockSystem hotelWorldClockSystem;
 
     public PhoneClock(int utcOffset) {

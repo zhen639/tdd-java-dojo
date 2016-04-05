@@ -1,8 +1,5 @@
-
-public class CityClock {
-
+public class CityClock extends Clock {
     private int utcZeroTime;
-    private int utcOffset;
 
     public CityClock(int Offset) {
         this.utcOffset = Offset;
